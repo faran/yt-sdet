@@ -2,6 +2,17 @@
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    goals: 'clean test'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
     options: 'clean test'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
