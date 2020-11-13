@@ -2,7 +2,7 @@
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'mvn clean test'
+    goals: 'clean test'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
