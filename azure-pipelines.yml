@@ -2,9 +2,6 @@
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
     goals: 'mvn clean test'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
