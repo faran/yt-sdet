@@ -3,7 +3,7 @@
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'test'
-    options: 'clean'
+    options: 'clean test'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
